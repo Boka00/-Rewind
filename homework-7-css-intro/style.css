@@ -5,6 +5,7 @@
 }
 body{
     background-color: #F5F5F7;
+    font-family:  'Inter', Arial, Helvetica, sans-serif;
 }
 
 .navbar{
@@ -72,22 +73,81 @@ main h2{
     text-align: center;
 }
 .cards{
+    padding-top: 49px;
     background-color: #F5F5F7;
     width: 1240px;
     margin: auto;
     text-align: center;
-    border: 1px solid #000000;
 }
-
+article{
+    display: inline-block;
+    margin: 14px;
+}
 .card{
     width: 360px;
     height: 472px;
     display: inline-block;
-    background-color: #666666;
+    background-color: #FFFFFF;
+
 }
 .image{
     background-color: #5B47D1;
     width: 360px;
     height: 240px;
     background-size: cover;
+}
+.content{
+    padding: 15px 19px 19px 17px;
+    text-align: left;
+}
+small{
+    padding: 0 28px 19px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: semibold;
+    padding-top: 15px;
+}
+.cards .card:nth-child(1) .image{
+    background-color: #C7B8FF;
+}
+.cards .card:nth-child(2) .image{
+    background-color: #FFB8D8;
+}
+.cards .card:nth-child(3) .image{
+    background-color: #B8E0FF;
+}
+.cards .card:nth-child(4) .image{
+    background-color: #D4FFB8;
+}
+.cards .card:nth-child(5) .image{
+    background-color: #FFE4B8;
+}
+.cards .card:nth-child(6) .image{
+    background-color: #FFD4B8;
+}
+
+footer{
+    background-color: #252424;
+    height: 403px;
+    text-align: center;
+    margin-top: 151px;
+}
+.footer-nav{
+    display: inline-block;
+    height: 338px;
+    color: #FFFFFF;
+}
+.copy{
+    background-color: #020202;
+    color: #86868B;
+    height: 72px;
+    text-align: center;
+    padding-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
