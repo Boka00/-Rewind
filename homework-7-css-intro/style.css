@@ -115,7 +115,7 @@ h3{
     font-weight: semibold;
     padding-bottom: 15px;
 }
-.cards .card:nth-child(1) .image{
+.cards .card:first-child .image{
     background-color: #C7B8FF;
 }
 .cards .card:nth-child(2) .image{
@@ -130,7 +130,7 @@ h3{
 .cards .card:nth-child(5) .image{
     background-color: #FFE4B8;
 }
-.cards .card:nth-child(6) .image{
+.cards .card:last-child .image{
     background-color: #FFD4B8;
 }
 
