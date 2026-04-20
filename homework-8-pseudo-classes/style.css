@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Quicksand, sans-serif;
+    background-color: #FFFFFF;
+}
+header{
+    border-bottom: 1px solid #ECEDED;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    width: 1512px;
+    height: 97px;
+    margin: auto;
+}
+.left-side{
+    display: flex;
+    font-size: 46px;
+    font-weight: bold;
+    margin: 20px 20px 20px 0;
+}
+.letter:first-child{
+    color: #3D8493;
+}
+.letter:nth-child(2){
+    color: #D89F65;
+}
+.letter:last-child{
+    color: #4A5C2F;
+}
+a{
+    display: flex;
+    text-decoration: none;
+}
+input{
+    background-color: #ECF3F5;
+    width: 357px;
+    margin-left: 109px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.button{
+    width: 175px;
+    height: 58px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    background-color: #B1CED4;
+    margin-left: 21px;
+    border: none;
+}
+/* 
+    Main
+*/
+.food-content{
+    display: flex;
+    margin-top: 42px;
+    padding-left: 139px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.food-content img{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.food-card{
+    display: flex;
+    background-color: #3D8493;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 14px;
+    border-radius: 15px;
+}
+.first-row, .second-row, .third-row{
+    display: flex;
+    flex-direction: row;
+}
