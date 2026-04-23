@@ -49,20 +49,38 @@ input{
 .right-side{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: 20px;
 }
+.right-side img{
+    width: 18px; 
+    position: relative;
+    top: 2px;
+}
+
+
 .button{
     width: 175px;
     height: 58px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
     letter-spacing: 0%;
     background-color: #B1CED4;
     margin-left: 21px;
     border: none;
+    color: #2C3832;
 }
+.button:hover{
+    background-color: #5cadbdb7;
+}
+.button img{
+    position: relative;
+    top: 2px;
+    right: 8px;
+}
+
+
 /* 
     Main
 */
@@ -75,21 +93,107 @@ input{
     justify-content: flex-start;
 }
 
-.food-content img{
-    display: flex;
-    width: 100%;
-    margin-bottom: 30px;
-}
 .food-card{
     display: flex;
-    background-color: #3D8493;
-    width: 200px;
-    height: 200px;
+    background-color:#D8E6E9;
+    border: 1px solid #ECEDED;
+    width: 203px;
+    height: 214px;
     overflow: hidden;
     margin: 14px;
+    padding-bottom: 10px;
     border-radius: 15px;
+}
+.food-card img{
+    display: flex;
+    width: 203px;
+    height: 147px;
+    object-fit: cover;
 }
 .first-row, .second-row, .third-row{
     display: flex;
     flex-direction: row;
+}
+figcaption{
+    display: flex;
+    justify-content: center;
+    width: 203px;
+}
+.card-title{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.card-footer{
+    padding: 8px 14px 10px 11px;
+}
+.card-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-category{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-right: 40px;
+}
+.category-level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #E0B284;
+    margin-right: 12px;
+}
+.card-icons{
+    display: flex;
+    justify-content: space-between;
+}
+.card-icons img{
+    top: 2px;
+    position: relative;
+    height: 17px;
+    width: auto;
+
+}
+
+/* FOOTER  */
+
+
+.footer-btns{
+    position: fixed;
+    width: 949px;
+    height: 106px;
+    margin: auto;
+    background-color: #EAF0F0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    top: 759px;
+    left: 330px;
+    z-index: 1;
+}
+.footer-btns button{
+    border: none;
+    border-radius: 10px;
+    min-width: 140px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family:  Quicksand, sans-serif;
+    text-transform: uppercase;
+    width: auto;
+    height: 58px;
+    background-color: #D9D9D9;
+}
+.footer-btns button:first-child{
+    background-color: #4A5C2F;
+    color: #ECF3F5;
 }
