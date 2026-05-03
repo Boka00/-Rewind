@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="nav">
+          <a href="#" class="nav-item active"
+            ><i class="fa-solid fa-house"></i
+          ></a>
+          <a href="#" class="nav-item"
+            ><i class="fa-solid fa-layer-group"></i
+          ></a>
+          <a href="#" class="nav-item"><i class="fa-regular fa-folder"></i></a>
+          <a href="#" class="nav-item"><i class="fa-regular fa-clock"></i></a>
+          <a href="#" class="nav-item"
+            ><i class="fa-regular fa-calendar"></i
+          ></a>
+        </nav>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <header class="topbar">
+          <h1>Dashboard da @say.valente</h1>
+        </header>
+
+        <section class="content">
+          <!-- Left content -->
+          <div class="left-panel">
+            <div class="top-cards">
+              <div class="card small"></div>
+              <div class="card small"></div>
+              <div class="card small"></div>
+            </div>
+
+            <div class="card wide"></div>
+
+            <div class="bottom-cards">
+              <div class="card medium"></div>
+              <div class="card medium"></div>
+            </div>
+          </div>
+
+          <!-- Right content -->
+          <div class="right-panel">
+            <div class="stack-box">
+              <div class="layer layer-1"></div>
+              <div class="layer layer-2"></div>
+              <div class="layer layer-3"></div>
+            </div>
+
+            <div class="card tall"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
