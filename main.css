@@ -8,7 +8,7 @@
   --text-normal: #1f2937;
   --text-muted: #6b7280;
 
-  --primary: #2563eb;
+  --primary: #5c71cc81;
   --primary-soft: #dbeafe;
   --primary-text: #ffffff;
 
@@ -38,7 +38,7 @@
   --text-normal: #e5e7eb;
   --text-muted: #94a3b8;
 
-  --primary: #60a5fa;
+  --primary: #6063fa;
   --primary-soft: rgba(96, 165, 250, 0.18);
   --primary-text: #020617;
 
@@ -50,7 +50,7 @@
 
   --border-color: #1e293b;
   --card-border: #1e293b;
-  --button-dark: #2563eb;
+  --button-dark: #341eaf;
   --disabled: #475569;
 
   --shadow-card: 0 18px 45px rgba(0, 0, 0, 0.35);
