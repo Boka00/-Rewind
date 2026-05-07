@@ -189,14 +189,12 @@ h2 {
 .left-panel .img-items:nth-child(2) {
   width: 300px;
   height: 200px;
-  background-color: blue;
   grid-column-start: 3;
   grid-row-start: 2;
 }
 .left-panel .img-items:nth-child(3) {
   width: 300px;
   height: 200px;
-  background-color: blue;
   grid-column-start: 2;
   grid-row-start: 3;
 }
@@ -204,14 +202,12 @@ h2 {
 .left-panel .img-items:nth-child(4) {
   width: 300px;
   height: 200px;
-  background-color: blue;
   grid-column-start: 3;
   grid-row-start: 4;
 }
 .left-panel .img-items:nth-child(5) {
   width: 200px;
   height: 200px;
-  background-color: blue;
   grid-column-start: 1;
   grid-row-start: 4;
 }
@@ -232,7 +228,6 @@ h2 {
 .img-items {
   width: 300px;
   height: 200px;
-  background-color: red;
 }
 
 .right-panel .img-items:nth-child(2) {
