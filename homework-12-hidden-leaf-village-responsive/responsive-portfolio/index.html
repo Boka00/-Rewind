@@ -20,20 +20,20 @@
 
       <div class="top-header">
         <div class="header-title">
-          <img src="./assets/images/g3173.svg" alt="logo" />
+          <img src="./assets/images/g3173.svg" alt="logo" class="logo" />
           <h1>Hidden Leaf Village</h1>
         </div>
         <p>Believe It! The Path of the Ninja Starts Here</p>
       </div>
       <div class="bottom-header">
-        <!-- <nav class="nav">
-          <ul>
-            <li><a href="#">Village</a></li>
-            <li><a href="#">text</a></li>
-            <li><a href="#">text</a></li>
-            <li><a href="#">text</a></li>
+        <nav class="nav">
+          <ul class="btns">
+            <li><a href="#" class="btn">Village</a></li>
+            <li><a href="#" class="btn active">Academy</a></li>
+            <li><a href="#" class="btn">Jutsu</a></li>
+            <li><a href="#" class="btn">Missions</a></li>
           </ul>
-        </nav> -->
+        </nav>
         <div class="menu">
           <div class="burger-menu">
             <span class="icon"></span>
@@ -71,71 +71,73 @@
 
       <div class="grid-container">
         <div class="grid-items">
-          <img src="./assets/images/rasengan.svg" alt="icon" />
-          <h3>Rasentgan</h3>
+          <div class="card-title">
+            <img src="./assets/images/rasengan.svg" alt="icon" />
+            <h3>Rasentgan</h3>
+          </div>
           <p>
             Master the legendary spiraling sphere technique created by the
             Fourth Hokage. Channel your chakra and unleash devastating power!
           </p>
         </div>
-      </div>
-      <!-- Card 2 -->
+        <!-- Card 2 -->
 
-      <div class="grid-container">
         <div class="grid-items">
-          <img src="./assets/images/chidori.svg" alt="icon" />
-          <h3>Rasentgan</h3>
+          <div class="card-title">
+            <img src="./assets/images/chidori.svg" alt="icon" />
+            <h3>Chidori</h3>
+          </div>
           <p>
-            Master the legendary spiraling sphere technique created by the
-            Fourth Hokage. Channel your chakra and unleash devastating power!
+            Harness lightning in your palm! The Kakashi's signature move that
+            cuts through anything. Feel the thunder in your hands!
           </p>
         </div>
-      </div>
-      <!-- Card 3 -->
+        <!-- Card 3 -->
 
-      <div class="grid-container">
         <div class="grid-items">
-          <img src="./assets/images/fire.svg" alt="icon" />
-          <h3>Rasentgan</h3>
+          <div class="card-title">
+            <img src="./assets/images/fire.svg" alt="icon" />
+            <h3>Fireball Jutsu</h3>
+          </div>
           <p>
-            Master the legendary spiraling sphere technique created by the
-            Fourth Hokage. Channel your chakra and unleash devastating power!
+            Learn the iconic Uchiha clan technique. Breathe fire and dominate
+            the battlefield with this powerful fire style ninjutsu!
           </p>
         </div>
-      </div>
-      <!-- Card 4 -->
+        <!-- Card 4 -->
 
-      <div class="grid-container">
         <div class="grid-items">
-          <img src="./assets/images/cake 1.svg" alt="icon" />
-          <h3>Rasentgan</h3>
+          <div class="card-title">
+            <img src="./assets/images/cake 1.svg" alt="icon" />
+            <h3>Shadow Clone</h3>
+          </div>
           <p>
-            Master the legendary spiraling sphere technique created by the
-            Fourth Hokage. Channel your chakra and unleash devastating power!
+            Create perfect copies of yourself to overwhelm your enemies.
+            Naruto's signature technique for training and combat!
           </p>
         </div>
-      </div>
-      <!-- Card 5 -->
+        <!-- Card 5 -->
 
-      <div class="grid-container">
         <div class="grid-items">
-          <img src="./assets/images/sharingan.svg" alt="icon" />
-          <h3>Rasentgan</h3>
+          <div class="card-title">
+            <img src="./assets/images/sharingan.svg" alt="icon" />
+            <h3>Sharingan</h3>
+          </div>
           <p>
-            Master the legendary spiraling sphere technique created by the
-            Fourth Hokage. Channel your chakra and unleash devastating power!
+            Awaken the legendary Uchiha bloodline ability. Copy any jutsu, see
+            through illusions, and predict enemy movements
           </p>
         </div>
-      </div>
-      <!-- Card 6 -->
+        <!-- Card 6 -->
 
-      <div class="grid-container">
         <div class="grid-items">
-          <img src="./assets/images/wave.svg" alt="icon" />
-          <h3>Rasentgan</h3>
+          <div class="card-title">
+            <img src="./assets/images/wave.svg" alt="icon" />
+            <h3>Water Dragon</h3>
+          </div>
           <p>
-            Master the legendary spiraling sphere technique created by the
-            Fourth Hokage. Channel your chakra and unleash devastating power!
+            Summon a massive dragon made of water to crush your opponents.
+            Master the water style and control the battlefield!
           </p>
         </div>
       </div>
@@ -146,4 +148,16 @@
       <p class="copyright">&copy; 2024 Hidden Leaf Village Academy.</p>
     </footer>
   </body>
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementByClassName("btns");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
 </html>
