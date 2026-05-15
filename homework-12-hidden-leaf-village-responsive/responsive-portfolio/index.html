@@ -27,11 +27,11 @@
       </div>
       <div class="bottom-header">
         <nav class="nav">
-          <ul class="btns">
-            <li><a href="#" class="btn">Village</a></li>
-            <li><a href="#" class="btn active">Academy</a></li>
-            <li><a href="#" class="btn">Jutsu</a></li>
-            <li><a href="#" class="btn">Missions</a></li>
+          <ul id="btns">
+            <li><a href="#Village" class="btn">Village</a></li>
+            <li><a href="#Academy" class="btn active">Academy</a></li>
+            <li><a href="#Jutsu" class="btn">Jutsu</a></li>
+            <li><a href="#Missions" class="btn">Missions</a></li>
           </ul>
         </nav>
         <div class="menu">
@@ -150,12 +150,14 @@
   </body>
   <script>
     // Add active class to the current button (highlight it)
-    var header = document.getElementByClassName("btns");
+    var header = document.getElementById("btns");
     var btns = header.getElementsByClassName("btn");
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" active", "");
+        }
         this.className += " active";
       });
     }

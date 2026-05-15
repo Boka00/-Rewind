@@ -207,6 +207,7 @@ footer {
   .active {
     background-color: #ff6b1a;
   }
+
   .grid-container {
     grid-template-columns: 324px 324px;
   }
@@ -215,6 +216,10 @@ footer {
 @media (min-width: 1200px) {
   html {
     font-size: 90%;
+  }
+  .active,
+  .btn:hover {
+    background-color: #ff6b1a;
   }
   .grid-container {
     grid-template-columns: 324px 324px 324px;
