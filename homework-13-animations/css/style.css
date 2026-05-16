@@ -1,0 +1,88 @@
+/* =========================
+   Modern CSS Reset
+   ========================= */
+/* Use border-box for easier sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Better default body setup */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Make media elements responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Make buttons and inputs inherit font */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Better button behavior */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Avoid text overflow problems */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  width: 1596px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
